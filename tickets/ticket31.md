@@ -115,7 +115,7 @@ int main() {
 2. **Формулировка `IFNDR`:** есть сущность имеет не 1 определение, то возникнет UB сразу после запуска программы (даже до выполнения main()), компилятор не обязан сообщать о некорректности программы
 
 	
-1) Пример ошибок линковщика: `multiple definition`, `undefined reference`:
+1) Пример ошибок линковщика: `multiple definition`, `undefined reference`: [Пример1](https://pastebin.com/yc7EWCBe)
 ```cpp
 // multiple definition example: - имеем несколько определений для сущности
 
