@@ -67,3 +67,4 @@
 
 # Алгоритмы
 ## Прима [сслыка](https://neerc.ifmo.ru/wiki/index.php?title=Алгоритм_Прима)
+### Графы [ссылка](https://iq.opengenus.org/list-of-graph-algorithms/)
