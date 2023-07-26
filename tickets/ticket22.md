@@ -82,6 +82,7 @@ int Foo::x = 0;  // ok!
 Порядок удаления неочевиден (под разными компиляторами даже по-разному).
 
 Больше про это можно прочитать в [билете 33](https://github.com/khbminus/CppTickets/blob/master/tickets/ticket33.md) про static initialization fiasco.
+Решение SIOF -- идиома Construct On First Use [Iso C++](https://isocpp.org/wiki/faq/ctors#explicit-define-static-data-mems)
 
 ### Статические константы
 Если поле сделать `integral` (типа, которое ~почти int: `int`, `char`, `long`, etc.) поле константным, то его можно сразу инициализировать через initializer:
@@ -145,6 +146,7 @@ static inline const int N = 60;
 ```
 
 Ровно так следует писать константы по мнению Егора.
+
 ### Статические методы, отличия от свободных функций и друзей
 В статических методах, как можно догадаться, не видно `this`. Обращаться можно только к статическим членам.
 
