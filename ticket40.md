@@ -1,5 +1,35 @@
 ## Билет 40. Базовое наследование.
 
+### 
+Полиморфизм (поли морфный -- много форм) Объект по-разному ведет себя во время выполнения программы
+Наследование **не** для уменьшения копи-паста. Используется для логического разделения интерфейса и реализации
+Наследование база для полиморфизма
+Виртуальность требует
+- Виртуальную член-функцию
+- Указатель/ссылку
+```
+struct Account{
+    virutal void deposit(double){}
+};
+struct BankAccount : Account{
+    void deposit(double) override{}
+};
+BankAccount b;
+Account* ba = &b; // С точки зрения компилятора - ba -- указатель на аккаунт
+ba->deposit(); // Но здесь вызовем BankAccount::deposit
+```
+- Конструктор не может быть виртуальным
+- Virtual in base stays virtual in derived
+- Vritual must have same parameters, return type and qualfiers
+- Pure virtual -> cannot instantiate object of that class. Thi class - abstract
+- override -- overrides virtual function of the base class
+- final -- overrides + cannot be overriden
+- Template method [method](https://youtu.be/Ou5WsJzn7Ws?list=PLHTh1InhhwT4TJaHBVWzvBOYhp27UO7mI&t=952). Сортировка (всегда readData, sortData, readData)
+- Base class destructor is either public + virtual or protected + non-virtual
+- 
+
+
+
 ### Совместимость по ссылкам и указателям
 
 #### Устройство
