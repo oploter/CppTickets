@@ -65,7 +65,7 @@
 - Эйлеров цикл есть в орграфе ТиТТ indeg(x) = indeg(y)
 - Если A -- матрица смежность -> a_(ij)^k = (A^k)_(ij) - количество маршрутов из i -> j длиной k
 - 
-
+[Наследование C++](https://www.startertutorials.com/blog/inheritance-in-c.html)
 # Алгоритмы
 ## Прима [сслыка](https://neerc.ifmo.ru/wiki/index.php?title=Алгоритм_Прима)
 ### Графы [ссылка](https://iq.opengenus.org/list-of-graph-algorithms/)
